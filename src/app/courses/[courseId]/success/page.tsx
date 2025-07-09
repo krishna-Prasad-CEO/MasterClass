@@ -25,7 +25,8 @@ const page = ({
 
         <CardContent className="text-center space-y-6">
           <p className="text-xl text-gray-600">
-            Thank you for enrolling our course. It&#39;s time to learn something new Today...
+            Thank you for enrolling our course. It&#39;s time to learn something
+            new Today...
           </p>
 
           <div className="bg-gray-100 p-4 rounded-md">
