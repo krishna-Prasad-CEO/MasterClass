@@ -4,13 +4,13 @@ import { CheckCircle } from "lucide-react";
 import Link from "next/link";
 
 interface PageProps {
-  params: { courseId: string };
-  searchParams: { session_id: string };
+  params: Promise<{ courseId: string }>;
+  searchParams: Promise<{ session_id: string }>;
 }
 
-const page = ({ params, searchParams }: PageProps) => {
-  const { courseId } = params;
-  const { session_id } = searchParams;
+const page = async ({ params, searchParams }: PageProps) => {
+  const { courseId } = await params;
+  const { session_id } = await searchParams;
 
   return (
     <div className="container mx-auto py-12 px-4">
