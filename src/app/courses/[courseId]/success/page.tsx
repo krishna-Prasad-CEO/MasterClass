@@ -3,13 +3,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 import Link from "next/link";
 
-const page = ({
-  params,
-  searchParams,
-}: {
+interface PageProps {
   params: { courseId: string };
   searchParams: { session_id: string };
-}) => {
+}
+
+const page = ({ params, searchParams }: PageProps) => {
   const { courseId } = params;
   const { session_id } = searchParams;
 
