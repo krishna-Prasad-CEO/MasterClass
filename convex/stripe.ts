@@ -53,8 +53,8 @@ export const createCheckoutSession = action({
         },
       ],
       mode: "payment",
-      success_url: `${process.env.NEXT_PUBLIC_APP_URL}/courses/${args.courseId}/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/courses`,
+      success_url: `master-class-lgj9.vercel.app/courses/${args.courseId}/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `master-class-lgj9.vercel.app/courses`,
 
       metadata: {
         courseId: args.courseId,
@@ -105,8 +105,8 @@ export const createProPlanCheckoutSession = action({
       customer: user.stripeCustomerId,
       line_items: [{ price: priceId, quantity: 1 }],
       mode: "subscription",
-      success_url: `${process.env.NEXT_PUBLIC_APP_URL}/pro/success?session_id={CHECKOUT_SESSION_ID}&year=${args.planId === "year"}`,
-      cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/pro`,
+      success_url: `master-class-lgj9.vercel.app/pro/success?session_id={CHECKOUT_SESSION_ID}&year=${args.planId === "year"}`,
+      cancel_url: `master-class-lgj9.vercel.app/pro`,
 
       metadata: { userId: user._id, planId: args.planId },
     });
