@@ -23,7 +23,7 @@ const Home = async () => {
       <div className="flex-grow container mx-auto px-4 py-16">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-4">
-            Forge Your Path in Modern Development
+            Forge Your Path in Modern Development with Master Class.
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Master Fullstack skills through engaging, Project-based learing.
